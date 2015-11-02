@@ -26,10 +26,10 @@ def sum_orders(customers, orders):
              'total': 15}}
     """
     report = {}
-    for custo, order in customers.iteritems():
+    for custo, order_req in customers.iteritems():
         num_orders = 0
         order_count = 0
-        for order in orders.values():
+        for order_req in orders.values():
             if custo in (order_req['customer_id'],):
                 num_orders += 1
                 order_count += order_req['total']
