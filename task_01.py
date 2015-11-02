@@ -36,6 +36,5 @@ def sum_orders(customers, orders):
                 report[custo] = {'name': order['name'],
                                  'email': order['email'],
                                  'orders': num_orders,
-                                 'total': order_count
-                                 }
+                                 'total': order_count}
     return report
