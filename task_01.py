@@ -33,8 +33,8 @@ def sum_orders(customers, orders):
             if custo in (order_req['customer_id'],):
                 num_orders += 1
                 order_count += order_req['total']
-                report[custo] = {'name': order['name'],
-                                 'email': order['email'],
+                report[custo] = {'name': order_req['name'],
+                                 'email': order_req['email'],
                                  'orders': num_orders,
                                  'total': order_count,
                                  }
